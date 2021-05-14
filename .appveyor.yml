@@ -9,7 +9,7 @@ branches:
 build: off
 
 install:
-  - ls
+  - cd rest
   - chmod +x gradlew
   - java -jar ./artifacts/app-mbank.jar &
 

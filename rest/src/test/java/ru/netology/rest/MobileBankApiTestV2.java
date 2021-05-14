@@ -15,11 +15,11 @@ class MobileBankApiTestV2 {
       // Выполняемые действия
       .when()
           .get("/demo/accounts")
-
+      // Проверки
       .then()
           .statusCode(200)
-           .header("Content-Type", "application/json; charset=UTF-8")
-
+          .header("Content-Type", "application/json; charset=UTF-8")
+          // специализированные проверки - лучше
           .contentType(ContentType.JSON)
       ;
     }
